@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Back - Sign In</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/login/login.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-section">
+      <div></div>
+      
+      <div class="form-content">
+        <h1 class="title">
+          Welcome Back
+        </h1>
+        <p class="subtitle">
+          Today is a new day. It's your day. You shape it.<br>
+          Sign in to start managing your projects.
+        </p>
+
+        <form onsubmit="event.preventDefault();">
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input 
+              type="email" 
+              id="email" 
+              class="form-input" 
+              placeholder="Example@email.com"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="password">Password</label>
+            <input 
+              type="password" 
+              id="password" 
+              class="form-input" 
+              placeholder="At least 8 characters"
+              required
+            >
+          </div>
+
+          <div class="forgot-link-wrapper">
+            <a href="#" class="forgot-link">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="btn-primary">Sign in</button>
+        </form>
+
+
+
+
+        <p class="signup-text">
+          Don't you have an account? <a href="/sign-up" class="signup-link">Sign up</a>
+        </p>
+      </div>
+
+  
+    </div>
+
+    <div class="image-section">
+      <div class="image-wrapper">
+        <img 
+          src="/images/login.jpg" 
+          alt="flower" 
+          class="artwork-image"
+        >
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

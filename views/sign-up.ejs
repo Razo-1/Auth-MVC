@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Back - Sign up</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/registratione/registraione.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-section">
+      <div></div>
+      
+      <div class="form-content">
+        <h1 class="title">
+          Welcome Back
+        </h1>
+        <p class="subtitle">
+         Today is a new day. It's your day. You shape it.</br>
+        Register to start managing your projects.
+        </p>
+
+        <form id="sigup">
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input 
+              type="email" 
+              id="email" 
+              class="form-input" 
+              placeholder="Example@email.com"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="age">age</label>
+            <input 
+              type="age" 
+              id="age" 
+              class="form-input"
+              placeholder="write age"
+              required
+            >
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="password">Password</label>
+            <input 
+              type="password" 
+              id="password" 
+              class="form-input" 
+              placeholder="At least 8 characters"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="password">Password</label>
+            <input 
+              type="password" 
+              id="clonePassword" 
+              class="form-input" 
+              placeholder="Confirm your password"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Gender</label>
+            <div class="gender-options">
+              <label class="gender-option">
+                <input data-gender="male" type="radio" name="gender" value="male" checked>
+                <span class="gender-btn">
+                  Male
+                </span>
+              </label>
+              <label class="gender-option">
+                <input data-gender="female" type="radio" name="gender" value="female">
+                <span class="gender-btn">
+                  Female
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary">Sign up</button>
+        </form>
+
+
+
+
+        <p class="signup-text">
+          Do you have an account? <a href="/sign-in" class="signup-link">Sign in</a>
+        </p>
+      </div>
+
+  
+    </div>
+
+    <div class="image-section">
+      <div class="image-wrapper">
+        <img 
+          src="/images/login.jpg" 
+          alt="flower" 
+          class="artwork-image"
+        >
+      </div>
+    </div>
+  </div>
+  <script src="/javascripts/signup/index.js"></script>
+</body>
+</html>
