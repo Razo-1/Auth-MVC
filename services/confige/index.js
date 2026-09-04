@@ -51,6 +51,14 @@ class ConfigeService {
             console.log(error)
         }
     }
+
+    async updateLoginBase(users){
+        try{
+            await fs.writeFile(path.join(__dirname,'..','..','DB','login.json'),JSON.stringify(users,null,2),'utf-8')
+        }catch(error){
+            console.log(error)
+        }
+    }
 }
 
 module.exports.ConfigeService = ConfigeService;

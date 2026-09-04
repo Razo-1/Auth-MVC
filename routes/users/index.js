@@ -1,7 +1,7 @@
 const express = require('express');
 const { userProfile } = require('../../controllers/usersPage');
-const userRouter = express.Router();
+const userProfileRouter = express.Router();
 
-userRouter.get('/users',userProfile.renderUsers)
+userProfileRouter.get('/users/:id', userProfile.renderUsers)
 
-module.exports = { userRouter };
+module.exports = { userProfileRouter };

@@ -21,6 +21,42 @@ class AuthService extends ConfigeService {
             findUser.isActive = true;
             await this.dataLogin(findUser);
             await this.updateDateBase(users);
+            return findUser.id
+        }catch(error){
+            console.log(error);
+        }
+    }
+
+    async logoutProfile(id){
+        try{
+            const userId = Number(id);
+            const users = await this.readDB();
+            const login = await this.readLogin();
+            
+            const findUser = users.find(el => el.id === userId);
+            findUser.isActive = false;
+
+            const findLoginUser = login.filter(el => el.id !== userId);
+
+            await this.updateDateBase(users);
+            await this.updateLoginBase(findLoginUser);
+        }catch(error){
+            console.log(error);
+        }
+    }
+
+    async newPass(body){
+        try{
+            const users = await this.readDB();
+
+            const findUser = users.find(el => el.email === body.email);
+
+            const hashPass = await bcrypt.hash(body.newPassword,10);
+
+            findUser.password = hashPass;
+
+            await this.updateDateBase(users);
+
         }catch(error){
             console.log(error);
         }

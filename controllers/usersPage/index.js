@@ -1,7 +1,7 @@
 class UserPage {
     async renderUsers(req,res,next){
-        const path = req.app.locals.service.start.createPath('users');
-        const users = await req.app.locals.service.start.readDB();
+        const path = req.app.locals.services.users.createPath('users');
+        const users = await req.app.locals.services.users.readDB();
         res.render(path,{users})
     }
 }

@@ -16,7 +16,7 @@ signin.addEventListener('submit',(e) => {
             })
         })
         .then(res => res.json())
-        .then(res => res.ok ? location.href = '/users' : '')
+        .then(res => res.ok ? location.href = `/app/users/:${res.id}` : '')
         .catch(rej => console.log(rej))
     }
 })

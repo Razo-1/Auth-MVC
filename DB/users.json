@@ -1,29 +1,92 @@
 [
   {
-    "name": "Gayane",
-    "email": "gayane.acount@gmail.com",
-    "age": "20",
-    "password": "$2b$10$JWxX3YUZLntHeerEhpfhG..l64QKK1Czn3cgXoZ7tVxxrHsbkgdg.",
-    "gender": "female",
-    "isActive": true,
-    "id": 1788527262887
-  },
-  {
-    "name": "Gayaneeeee",
-    "email": "gayane.acount@gmail.com",
-    "age": "29",
-    "password": "$2b$10$tswaE2/n9dONF/A9wyfMQewq.fulFlBYtLqANiK/4bEufAF9RudLG",
-    "gender": "female",
-    "isActive": false,
-    "id": 1788527286492
-  },
-  {
-    "name": "Gayan",
-    "email": "gayane@gmail.com",
-    "age": "21",
+    "name": "James",
+    "email": "james.smith@gmail.com",
+    "age": "24",
     "password": "$2b$10$IYSLlvrHbve2C3gsv08kL.CWw2bmqwniJJbwDxCi/vUlIn167Td2K",
-    "gender": "female",
+    "gender": "male",
     "id": 1788530224152,
-    "isActive": true
+    "isActive": false
+  },
+  {
+    "name": "Charlotte",
+    "email": "charlotte.brown@gmail.com",
+    "age": "22",
+    "password": "$2b$10$8FqZsLv3mN9pL2xK1qRtM.8bL5sTvWxYzA3pQ7jD2mN5kO9hR1tYi",
+    "gender": "female",
+    "id": 1788530224153,
+    "isActive": false
+  },
+  {
+    "name": "Oliver",
+    "email": "oliver.wilson@gmail.com",
+    "age": "26",
+    "password": "$2b$10$9GsAqLw4mO8pM3yL2sRuN.9cM6tUwXyZaB4pR8kE3nO6lP0iS2uZj",
+    "gender": "male",
+    "id": 1788530224154,
+    "isActive": false
+  },
+  {
+    "name": "Sophia",
+    "email": "sophia.taylor@gmail.com",
+    "age": "21",
+    "password": "$2b$10$AHtBrMx5nP9qN4zM3tSvO.AdN7uVxYzaBc5pS9lF4oP7mQ1jT3vAk",
+    "gender": "female",
+    "id": 1788530224155,
+    "isActive": false
+  },
+  {
+    "name": "William",
+    "email": "william.jones@gmail.com",
+    "age": "28",
+    "password": "$2b$10$BIuCsNy6oQ0rO5aN4uTwP.BeO8vWyZabCd6pT0mG5pQ8nR2kU4wBl",
+    "gender": "male",
+    "id": 1788530224156,
+    "isActive": false
+  },
+  {
+    "name": "Emma",
+    "email": "emma.davies@gmail.com",
+    "age": "23",
+    "password": "$2b$10$CJvDtOz7pR1sP6bO5vUxQ.CfP9wXzaBcDe7pU1nH6qR9oS3lV5xCm",
+    "gender": "female",
+    "id": 1788530224157,
+    "isActive": false
+  },
+  {
+    "name": "Benjamin",
+    "email": "benjamin.moore@gmail.com",
+    "age": "25",
+    "password": "$2b$10$DKwEuPa8qS2tQ7cP6wVyR.DgQ0xYabCdEf8pV2oI7rS0pT4mW6yDn",
+    "gender": "male",
+    "id": 1788530224158,
+    "isActive": false
+  },
+  {
+    "name": "Olivia",
+    "email": "olivia.clark@gmail.com",
+    "age": "20",
+    "password": "$2b$10$ELxFvQb9rT3uR8dQ7xWzS.EhR1yZbcDeF g9pW3pJ8sT1qU5nX7zEo",
+    "gender": "female",
+    "id": 1788530224159,
+    "isActive": false
+  },
+  {
+    "name": "Henry",
+    "email": "henry.lewis@gmail.com",
+    "age": "27",
+    "password": "$2b$10$FMyGwRc0sU4vS9eR8yXaT.FiS2zaCdEfGh0pX4qK9tU2rV6oY8aFp",
+    "gender": "male",
+    "id": 1788530224160,
+    "isActive": false
+  },
+  {
+    "name": "Isabella",
+    "email": "isabella.walker@gmail.com",
+    "age": "24",
+    "password": "$2b$10$GNzHxSd1tV5wT0fS9zYbU.GjT3abDeF gHi1pY5rL0uV3sW7pZ9bGq",
+    "gender": "female",
+    "id": 1788530224161,
+    "isActive": false
   }
 ]
