@@ -6,12 +6,13 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-const { AuthService } = require('./services/authService');
+const { AuthService,UserService } = require('./services');
 
 var app = express();
 
 app.locals.services = {
-  start : new AuthService()
+  start : new AuthService(),
+  users : new UserService()
 }
 
 // view engine setup

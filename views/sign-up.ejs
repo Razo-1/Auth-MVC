@@ -24,71 +24,79 @@
         Register to start managing your projects.
         </p>
 
-        <form id="sigup">
-          <div class="form-group">
-            <label class="form-label" for="email">Email</label>
-            <input 
-              type="email" 
-              id="email" 
-              class="form-input" 
-              placeholder="Example@email.com"
-              required
-            >
-          </div>
+       <form id="signup">
 
-          <div class="form-group">
-            <label class="form-label" for="age">age</label>
-            <input 
-              type="age" 
-              id="age" 
-              class="form-input"
-              placeholder="write age"
-              required
-            >
-          </div>
-          
-          <div class="form-group">
-            <label class="form-label" for="password">Password</label>
-            <input 
-              type="password" 
-              id="password" 
-              class="form-input" 
-              placeholder="At least 8 characters"
-              required
-            >
-          </div>
+  <div class="form-group">
+    <label class="form-label" for="name">Name</label>
+    <input 
+      type="text" 
+      id="name" 
+      class="form-input" 
+      placeholder="write name example ..."
+      required
+    >
+  </div>
 
-          <div class="form-group">
-            <label class="form-label" for="password">Password</label>
-            <input 
-              type="password" 
-              id="clonePassword" 
-              class="form-input" 
-              placeholder="Confirm your password"
-              required
-            >
-          </div>
+  <div class="form-group">
+    <label class="form-label" for="email">Email</label>
+    <input 
+      type="email" 
+      id="email" 
+      class="form-input" 
+      placeholder="Example@email.com"
+      required
+    >
+  </div>
 
-          <div class="form-group">
-            <label class="form-label">Gender</label>
-            <div class="gender-options">
-              <label class="gender-option">
-                <input data-gender="male" type="radio" name="gender" value="male" checked>
-                <span class="gender-btn">
-                  Male
-                </span>
-              </label>
-              <label class="gender-option">
-                <input data-gender="female" type="radio" name="gender" value="female">
-                <span class="gender-btn">
-                  Female
-                </span>
-              </label>
-            </div>
-          </div>
+  <div class="form-group">
+    <label class="form-label" for="age">Age</label>
+    <input 
+      type="number" 
+      id="age" 
+      class="form-input"
+      placeholder="write age example 20"
+      required
+    >
+  </div>
+  
+  <div class="form-group">
+    <label class="form-label" for="password">Password</label>
+    <input 
+      type="password" 
+      id="password" 
+      class="form-input" 
+      placeholder="At least 8 characters"
+      required
+    >
+  </div>
 
-          <button type="submit" class="btn-primary">Sign up</button>
-        </form>
+  <div class="form-group">
+    <label class="form-label" for="clonePassword">Confirm Password</label>
+    <input 
+      type="password" 
+      id="clonePassword" 
+      class="form-input" 
+      placeholder="Confirm your password"
+      required
+    >
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Gender</label>
+    <div class="gender-options">
+      <label class="gender-option">
+        <input data-gender="male" type="radio" name="gender" value="male" checked>
+        <span class="gender-btn">Male</span>
+      </label>
+      <label class="gender-option">
+        <input data-gender="female" type="radio" name="gender" value="female">
+        <span class="gender-btn">Female</span>
+      </label>
+    </div>
+  </div>
+
+  <button type="submit" class="btn-primary">Sign up</button>
+</form>
 
 
 

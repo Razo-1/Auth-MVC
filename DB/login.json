@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Gayane",
+    "email": "gayane.acount@gmail.com",
+    "age": "20",
+    "password": "$2b$10$JWxX3YUZLntHeerEhpfhG..l64QKK1Czn3cgXoZ7tVxxrHsbkgdg.",
+    "gender": "female",
+    "isActive": true,
+    "id": 1788527262887
+  },
+  {
+    "name": "Gayan",
+    "email": "gayane@gmail.com",
+    "age": "21",
+    "password": "$2b$10$IYSLlvrHbve2C3gsv08kL.CWw2bmqwniJJbwDxCi/vUlIn167Td2K",
+    "gender": "female",
+    "id": 1788530224152,
+    "isActive": true
+  }
+]
