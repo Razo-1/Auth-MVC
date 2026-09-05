@@ -2,7 +2,7 @@ const fs = require('fs').promises;
 const path = require('path');
 
 class ConfigeService {
-    createPath(fileName){
+    createPath(fileName = 'sign-in'){
         return path.join(__dirname,'..','..','views',`${fileName}.ejs`);   
     }
 

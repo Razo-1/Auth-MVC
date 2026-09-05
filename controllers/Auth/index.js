@@ -11,8 +11,8 @@ class AuthMe {
         res.status(201).json({msg : 'new user have been added!', ok : true})
     }
 
-    loginUser(req,res,next){
-        const user = req.app.locals.services.start.login(req.body);
+    async loginUser(req,res,next){
+        const user = await req.app.locals.services.start.login(req.body);
         res.status(200).json({msg : 'The user has successfully logged in.  ', ok : true,id : user})
     }
 

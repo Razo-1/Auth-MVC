@@ -3,21 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>User Profile</title>
     <link rel="stylesheet" href="/stylesheets/userProfile/userProfile.css">
 </head>
 <body>
-    <div>
-        <h2 id="logout">Logout</h2>
-    </div>
-    <div>
-        <% users.forEach((el,ind) => { %>
-            <div>
-                <p><%= el.name%></p>
-                <p><%= el.email%></p>
-                <p>Active Status : <%= el.isActive ? 'Online' : 'Offline' %></p>
-            </div>
-        <% })%>
+    <div class="container">
+        <header class="header">
+            <h1><%= date.name %></h1>
+            <button id="logout" class="logout-btn">Logout</button>
+        </header>
+
+        <main class="users-list">
+            <% if (users && users.length > 0) { %>
+                <% users.forEach((el, ind) => { %>
+                    <div class="user-card">
+                        <div class="user-info">
+                            <h3 class="user-name"><%= el.name %></h3>
+                            <p class="user-email"><%= el.email %></p>
+                        </div>
+                        <div class="status-container">
+                            <span class="status-badge <%= el.isActive ? 'online' : 'offline' %>">
+                                <%= el.isActive ? '🟢 Online' : '⚫ Offline' %>
+                            </span>
+                        </div>
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <p class="no-users">No users found</p>
+            <% } %>
+        </main>
     </div>
 
     <script src="/javascripts/userProfile/index.js"></script>
